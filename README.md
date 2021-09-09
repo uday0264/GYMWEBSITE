@@ -1,1 +1,185 @@
-# GYMWEBSITE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('GYM2664.jpg');
+        color: white;
+    }
+    .left
+    {
+        display:inline-block;
+        
+        position :absolute;
+        left: 34px;
+        top:20px;
+    }
+    .left img{
+        width : 136px;
+       
+
+    }
+    .left div{
+        line-height: 1px;
+        text-align:center;
+     
+    }
+    .mid
+    {
+        display:block;
+        width:36%;
+        margin:29px auto;
+       
+    }
+    .right{
+        position :absolute;
+        right: 34px;
+        top:20px;
+        display:inline-block;
+       
+    }
+    .navbar{
+    
+        display:inline-block;
+    }
+    .navbar li{
+    
+        
+        display:inline-block;
+        font-size: 15px;
+    }
+    .navbar li a
+    {
+     
+        color:white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .form-group label{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .formerror {
+            color: red;
+        }
+
+  
+</style>
+<body>
+    <header class = "header">
+        <div class = "left">
+<img src = "logo1.jpg" alt="">
+<div>Uday Fitness</div>
+        </div>
+        <div class = "mid">
+<ul class = "navbar">
+    <li><a href ="#">Home</a></li>
+    <li><a href ="#">About us</a></li>
+    <li><a href ="#">Fitness calculator</a></li>
+    <li><a href ="#">Contact Us</a></li>
+</ul>
+        </div>
+        <div class = "right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="GET" >
+            <div class="form-group" id="name">
+                <input type="text" name="mn" placeholder="Enter your Name"><b><span class="formerror"> </span></b>
+            </div>
+            <div class="form-group" id="age">
+                <input type="text" name="ma" placeholder="Enter your Age"><b><span class="formerror"> </span></b>
+            </div>
+            <div class="form-group" id="gender">
+                <input type="text" name="mg" placeholder="Enter your Gender"><b><span class="formerror"> </span></b>
+            </div>
+           
+            <div class="form-group" id="email">
+                <input type="email" name="me" placeholder="Enter your Email Id"><b><span class="formerror"> </span></b>
+            </div>
+            <div class="form-group" id="phone">
+                <input type="text" name="mp" placeholder="Enter your Phone Number"><b><span class="formerror"> </span></b>
+            </div>
+            <div class="form-group" >
+                <label for="myfile">Upload address proof</label>
+                   <input type="file" id="myfile" name="myfile">
+            </div>
+            <button class="btn">Submit</button>
+            <div class="signin">
+                <p>Already have an account? <a href="login.html">Log in</a>.</p>
+              </div>
+        </form>
+    </div>
+</body>
+<script src="inde.js"></script>
+</html>
